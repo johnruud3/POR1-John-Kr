@@ -1,85 +1,181 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>John-kristian G. Ruud - Portfolio</title>
-    <link rel="stylesheet" href="styling/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" href="styling/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header>
+      <div class="burger" id="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
 
-           <div class="burger" id="burger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-
-        <nav>
+      <nav>
         <ul class="nav-links">
-            <li><a href="about.html">About me</a></li>
-            <li><a href="index.html">Portfolio</a></li>
-            <li><a href="contact.html">Contact</a></li>
+          <li><a href="about.html">About me</a></li>
+          <li><a href="index.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
-    </nav>
+      </nav>
     </header>
 
-<div class="profile-image-container">
-    <img class="profile-image" src="images/profilbilde.jpg" alt="John-kristian G. Ruud">
-</div>
-
-
-    
+    <div class="profile-image-container">
+      <img
+        class="profile-image"
+        src="images/profilbilde.jpg"
+        alt="John-kristian G. Ruud"
+      />
+    </div>
 
     <div class="header-content">
-
-            <h1>John-kristian G. Ruud's portfolio</h1>
-        </div>
+      <h1>John-kristian G. Ruud's portfolio</h1>
+    </div>
 
     <main class="portfolio-container">
-        <div class="portfolio-card">
-            <a href="https://eloquent-zabaione-d9885d.netlify.app/" target="_blank">
-            <img src="/thumbnails/PE1.jpg" alt="Portfolio Item 1" class="portfolio-image">
-             </a>
-            <h2>Project Exam 1</h2>
-            <p>This is my project exam 1. Where I first started to understand the JavaScript. And had a lot of fun!</p>
-            <h3>
-                The GitHub repository:
-            <a href="https://github.com/johnruud3/FED1-PE1-johnruud3." target="_blank" rel="noopener noreferrer" class="portfolio-btn">
-                Visit Project
-            </a>
-            </h3>
-                </div>
-        <div class="portfolio-card">
-            <a href="https://semesterproject1-john-kr.netlify.app/" target="_blank">
-            <img src="/thumbnails/semesterproject1.jpg" alt="Portfolio Item 3" class="portfolio-image">
-            </a>
-            <h2>Semester Project 1</h2>
-            <p>This is my Semester project 1. Where i learned alot about github and planning boards.</p>
-            <h3>
-                The GitHub repository:
-            <a href="https://github.com/johnruud3/Semesterproject" target="_blank" rel="noopener noreferrer" class="portfolio-btn">
-                Visit Project
-            </a>
-            </h3>
-        </div>
-        <div class="portfolio-card">
-            <a href="https://rainydays-john-kr.netlify.app/headerpage.html" target="_blank">
-            <img src="/thumbnails/Rainydays.jpg" alt="Portfolio Item 2" class="portfolio-image">
-            </a>
-            <h2>HTML and CSS course</h2>   
-            <p>This was strictly HTML and CSS. This is where i grinded hard to first learn how to code!</p>   
-            <h3>
-                The GitHub repository:
-            <a href="https://github.com/johnruud3/Rayny-Days-final-main" target="_blank" rel="noopener noreferrer" class="portfolio-btn">
-                Visit Project
-            </a>
-            </h3>    
-        </div>
+      <div class="other-projects-container">
+        <p class="other-projects-title">School projects:</p>
+      </div>
+      <article class="portfolio-card">
+        <a href="projects/project-exam-1.html">
+          <img
+            src="thumbnails/PE1.jpg"
+            alt="Project Exam 1 thumbnail"
+            class="portfolio-image"
+          />
+        </a>
+        <h2>Project Exam 1</h2>
+        <p class="portfolio-teaser">
+          My first project exam where I started learning JavaScript and building
+          interactive features on the web.
+        </p>
+        <a href="projects/project-exam-1.html" class="read-more-link">
+          Read more
+        </a>
+      </article>
+
+      <article class="portfolio-card">
+        <a href="projects/semester-project-1.html">
+          <img
+            src="thumbnails/semesterproject1.jpg"
+            alt="Semester Project 1 thumbnail"
+            class="portfolio-image"
+          />
+        </a>
+        <h2>Semester Project 1</h2>
+        <p class="portfolio-teaser">
+          My first semester project focused on GitHub workflows, planning
+          boards, and team collaboration.
+        </p>
+        <a href="projects/semester-project-1.html" class="read-more-link">
+          Read more
+        </a>
+      </article>
+
+      <article class="portfolio-card">
+        <a href="projects/html-css-course.html">
+          <img
+            src="thumbnails/Rainydays.jpg"
+            alt="HTML and CSS course thumbnail"
+            class="portfolio-image"
+          />
+        </a>
+        <h2>HTML and CSS course</h2>
+        <p class="portfolio-teaser">
+          A strictly HTML and CSS project where I learned the fundamentals of
+          responsive web design from scratch.
+        </p>
+        <a href="projects/html-css-course.html" class="read-more-link">
+          Read more
+        </a>
+      </article>
+
+      <article class="portfolio-card">
+        <a href="projects/css-frameworks.html">
+          <img
+            src="thumbnails/jsca.jpg"
+            alt="CSS frameworks course thumbnail"
+            class="portfolio-image"
+          />
+        </a>
+        <h2>CSS frameworks course</h2>
+        <p class="portfolio-teaser">
+          A CSS frameworks course where I built an interactive, responsive
+          website using modern layout tools.
+        </p>
+        <a href="projects/css-frameworks.html" class="read-more-link">
+          Read more
+        </a>
+      </article>
+
+      <article class="portfolio-card">
+        <a href="projects/js-framework.html">
+          <img
+            src="thumbnails/jsfw.jpg"
+            alt="JavaScript framework course thumbnail"
+            class="portfolio-image"
+          />
+        </a>
+        <h2>JavaScript Framework course</h2>
+        <p class="portfolio-teaser">
+          A JavaScript framework course where I learned to build interactive,
+          component-based web applications.
+        </p>
+        <a href="projects/js-framework.html" class="read-more-link">
+          Read more
+        </a>
+      </article>
+
+      <article class="portfolio-card">
+        <a href="projects/semester-project-2.html">
+          <img
+            src="thumbnails/sp2.jpg"
+            alt="Semester Project 2 thumbnail"
+            class="portfolio-image"
+          />
+        </a>
+        <h2>Semester Project 2</h2>
+        <p class="portfolio-teaser">
+          An auction website with API integration, user profiles, and bidding my
+          most advanced project to date.
+        </p>
+        <a href="projects/semester project-2.html" class="read-more-link">
+          Read more
+        </a>
+      </article>
+      <div class="other-projects-container">
+        <p class="other-projects-title">
+          Other projects from outside of school:
+        </p>
+      </div>
+      <article class="portfolio-card">
+        <a href="projects/treoppdrag.html">
+          <img
+            src="thumbnails/treoppdrag.jpg"
+            alt="Treoppdrag website thumbnail"
+            class="portfolio-image"
+          />
+        </a>
+        <h2>Treoppdrag</h2>
+        <p class="portfolio-teaser">
+          Treoppdrag.no is a platform built to connect customers across Norway
+          with professional insured tree cutters in a fast, reliable, and secure
+          way.
+        </p>
+        <a href="projects/treoppdrag.html" class="read-more-link">
+          Read more
+        </a>
+      </article>
     </main>
     <script src="JS/index.js"></script>
-</body>
+  </body>
 </html>
